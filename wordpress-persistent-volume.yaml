@@ -4,9 +4,6 @@ metadata:
   name: wordpress-pv
 spec:
   storageClassName: local-storage
-  claimRef:
-    name: wordpress-pvc
-    namespace: default
   capacity:
     storage: 10Gi
   accessModes:
