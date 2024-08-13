@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql-persistent-volume-claim
+  name: mysql-volume
   namespace: default
 spec:
   accessModes:

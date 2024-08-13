@@ -13,7 +13,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - name: mysql
+      - name: database
         image: mysql:5.7
         envFrom:
           - secretRef:
@@ -26,4 +26,4 @@ spec:
       volumes:
       - name: mysql-data
         persistentVolumeClaim:
-          claimName: mysql-persistent-volume-claim
+          claimName: mysql-volume

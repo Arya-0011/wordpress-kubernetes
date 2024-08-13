@@ -4,6 +4,9 @@ metadata:
   name: mysql-pv
 spec:
   storageClassName: local-storage
+  claimRef:
+    name: mysql-volume
+    namespace: default
   capacity:
     storage: 1Gi
   accessModes:
